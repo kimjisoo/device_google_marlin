@@ -643,15 +643,12 @@ PRODUCT_PACKAGES := \
     CellBroadcastReceiver \
     CertInstaller \
     DrmProvider \
-    Email \
-	ExactCalculator \
+    ExactCalculator \
     Gallery2 \
     LatinIME \
     Mms \
-    Music \
     Phone \
     Provision \
-    QuickSearchBox \
     Settings \
     Sync \
     SystemUI \
