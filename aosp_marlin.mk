@@ -27,9 +27,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 PRODUCT_NAME := aosp_marlin
 PRODUCT_DEVICE := marlin
 PRODUCT_BRAND := Android
-PRODUCT_MODEL := AOSP on msm8996
+PRODUCT_MODEL := Pixel XL
 PRODUCT_MANUFACTURER := google
-PRODUCT_RESTRICT_VENDOR_FILES := true
+PRODUCT_RESTRICT_VENDOR_FILES := false
 
 PRODUCT_COPY_FILES += device/google/marlin/fstab.common:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.marlin
 
@@ -39,4 +39,7 @@ $(call inherit-product-if-exists, vendor/google_devices/marlin/device-vendor-mar
 PRODUCT_PACKAGES += \
     Launcher3 \
     WallpaperPicker
+
+# add jisoo vendor files
+$(call inherit-product, vendor/jisoo/config/common.mk)
 
